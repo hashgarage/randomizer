@@ -1,0 +1,23 @@
+{
+  "name": "randomization",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node --project ./tsconfig.json ./index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^15.12.4",
+    "ts-node": "^10.0.0",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.4"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "knuth-shuffle-seeded": "^1.0.6",
+    "nedb-promises": "^5.0.0",
+    "uuid": "^8.3.2"
+  }
+}
