@@ -46,7 +46,7 @@ export function getGroupNumbers(start: number, finish: number) {
   const groupCount = finishGroupNumber - startGroupNumber + 1
   return Array(groupCount).fill(0).map((_, i) => {
     const groupNumber = i + startGroupNumber
-    const groupStart = i ? groupNumber * GROUP_SIZE + 1 : start % GROUP_SIZE
+    const groupStart = i ? groupNumber * GROUP_SIZE + 1 : groupNumber * GROUP_SIZE + start % GROUP_SIZE
     const groupEnd = i === groupCount - 1 ? finish : (groupNumber + 1) * GROUP_SIZE
 
     return {
